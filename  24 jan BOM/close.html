@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>window open</h1>
+	<button id="band">close new window</button>
+	<script type="text/javascript">
+		var newWindow=window.open(" ","_blank","width=200,height=200");
+		document.write(newWindow);
+		function exit()
+		{
+			newWindow.close();
+		}
+		document.getElementById("band").addEventListener("click",exit);
+		var newWindow=window.open(" ","_blank","width=700,height=300");
+		newWindow.document.write("i am new window");
+		function exit()
+		{
+			newWindow.document.close();
+			newWindow.close();
+		}
+		document.getElementById("band").addEventListener("click",exit);
+	</script>
+
+
+</body>
+</html>

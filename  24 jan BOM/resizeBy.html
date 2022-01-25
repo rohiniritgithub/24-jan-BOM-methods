@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>resizing</h1>
+	<button type="button" id="openbtn"> open window</button>
+	<button type="button" id="resizebtn"> resizeWindow</button>
+	<script type="text/javascript">
+		var newWindow;
+		function openWin( ) {
+			newWindow=window.open("","newWindow","width=300,height=500");
+			newWindow=document.write("i am in new window");
+
+			// body...
+		}
+
+		function resizeWin()
+ {
+			newWindow.resizeBy(200,200);
+			newWindow.focus();
+		}
+		document.getElementById("openbtn").addEventListener("click",openWin);
+		document.getElementById("resizebtn").addEventListener("click",resizeWin);
+
+
+	</script>
+
+</body>
+</html>

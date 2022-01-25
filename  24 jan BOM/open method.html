@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>window open</h1>
+	<button type="button" id="btn">Click</button>
+	<script type="text/javascript">
+		function createWindow()
+		{
+			window.open();
+
+		}
+		
+document.getElementById("btn").addEventListener("click",createWindow);
+
+var newWindow=window.open();
+document.write(newWindow);
+
+var newWindow=window.open("https://mail.google.com/mail/u/0/#inbox");
+var newWindow=window.open("https://mail.google.com/mail/u/0/#inbox", "_self");
+var newWindow=window.open("https://mail.google.com/mail/u/0/#inbox","_blank","height=400 ,width=600");
+var newWindow=window.open("https://mail.google.com/mail/u/0/#inbox","_blank","height=200,width=500",false);
+var newWindow=window.open("https://mail.google.com/mail/u/0/#inbox","_blank","height=400,width=600,scrollbar=no");
+var newWindow=window.open("https://mail.google.com/mail/u/0/#inbox","_blank","toolbar=no");
+
+
+
+
+	</script>
+
+</body>
+</html>no

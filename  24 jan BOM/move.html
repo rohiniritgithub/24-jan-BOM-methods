@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>Moving Window</h1>
+	<button type="button" id="openbtn"> open window </button>
+	<button type="button" id="movwbtn"> move window</button>
+	<script type="text/javascript">
+		var newWindow;
+		function openWin() {
+			newWindow=window.open("" , "newWindow","width=300,height=200");
+			newWindow.document.write("new window hoon mai");
+			
+		}
+		function moveWin()
+		{
+			newWindow.moveBy(200,200);
+			newWindow.focus();
+		}
+		document.getElementById("openbtn").addEventListener("click",openWin);
+		document.getElementById("movebtn").addEventListener("click",moveWin);
+
+
+	</script>
+
+</body>
+</html>
